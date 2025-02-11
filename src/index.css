@@ -14,7 +14,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 /* === Links === */
 a {
   font-weight: 500;
@@ -32,7 +31,7 @@ body {
   flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
-  padding-top: 80px; /* Adjust based on navbar height */
+  padding-top: 90px; /* Adjust based on navbar height */
   place-items: center;
   background-color: #ffffff; /* Light theme */
   color: #213547;
@@ -40,34 +39,53 @@ body {
 
 /* === Navbar Improvements === */
 .navbar {
-  position: fixed;        /* Ensures it's fixed */
-  top: 0;                 /* Sticks to the top */
-  width: 100%;            /* Full-width */
-  z-index: 1030;          /* Keeps it above other elements */
-  background-color: #769a6d;  /* White background */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Soft shadow for separation */
-  height: 90px;           /* Fixed height for reference */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+  background-color: #769a6d;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 80px;
 }
 
+/* Navbar dropdown fix */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: white !important;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 
-/* === Main Heading === */
+  .navbar-nav .nav-link {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+/* === Main Heading Responsive Fix === */
 .main-heading {
   font-family: 'Oswald', sans-serif;
-  font-size: 35px;
-  font-weight:300;
+  font-size: 32px;
+  font-weight: 400;
   color: #769a6d;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   letter-spacing: 1px;
   margin: 10px 0;
-  /* border: 1px solid #769a6d; */
-  border-radius: 8px;
   padding: 8px 16px;
   background-color: #f9f9f9;
 }
 
+/* Adjust heading for mobile */
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
 /* === Poster Section Fix (Spacing) === */
 .poster-container {
-  margin-top: 100px; /* Ensures proper spacing below fixed navbar */
+  margin-top: 120px;
 }
 
 /* === Carousel Improvements === */
@@ -85,6 +103,7 @@ body {
   font-size: 14px;
   border-top: 1px solid #ddd;
 }
+
 .footer a {
   color: #646cff;
 }
@@ -112,42 +131,15 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* === Responsive Tweaks === */
-@media (max-width: 768px) {
-  .main-heading {
-    font-size: 28px;
-  }
-  .poster-container {
-    margin-top: 80px;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #1a1a1a;
-  }
-}
-
-.poster-container
-{
-  margin-top: 110px;
-}
-
+/* === About Us Section === */
 .about-us-section {
-  background-color: #f4f9f4; 
+  background-color: #f4f9f4;
   color: #333;
 }
 
 .about-heading {
   font-family: 'Oswald', sans-serif;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: bold;
   color: #769a6d;
   text-transform: uppercase;
@@ -183,7 +175,7 @@ button:hover {
   margin-top: 20px;
 }
 
-
+/* === Product Styling === */
 .product-heading {
   font-family: 'Oswald', sans-serif;
   font-size: 32px;
@@ -203,9 +195,8 @@ button:hover {
 }
 
 .product-image {
-  width: 100%;               /* Ensures full width of the card */
-  height: 200px;             /* Fixed height for uniformity */
-  object-fit: cover;         /* Crops the image to fill the container */
-  border-radius: 8px;        /* Slight rounding for a clean look */
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
 }
-

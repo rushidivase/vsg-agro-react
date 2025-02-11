@@ -46,7 +46,7 @@ function Home() {
                         </Col>
                     </Row>
 
-                    <Row className="justify-content-center poster-container mb-4 bg-light">
+                    {/* <Row className="justify-content-center poster-container mb-4 bg-light">
                         <Col md={10} className="p-3 rounded">
                             <img
                                 className="img-fluid rounded w-100 mb-4"
@@ -54,7 +54,7 @@ function Home() {
                                 alt="Poster"
                             />
                         </Col>
-                    </Row>
+                    </Row> */}
                 </section>
 
                 <section id="about-us">
