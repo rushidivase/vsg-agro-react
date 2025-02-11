@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
@@ -9,39 +9,22 @@ const products = [
 ];
 
 function Products() {
-    const [isGridView, setIsGridView] = useState(true);
-
     return (
         <Container className="my-5">
-            <div className="d-flex justify-content-between align-items-center mb-4">
-                <h2 className="product-heading">Our Products</h2>
-                <div>
-                    <Button variant={isGridView ? "success" : "outline-success"} className="me-2" onClick={() => setIsGridView(true)}>Grid View</Button>
-                    <Button variant={!isGridView ? "success" : "outline-success"} onClick={() => setIsGridView(false)}>List View</Button>
-                </div>
-            </div>
-
-            <Row className={isGridView ? 'g-4' : 'g-3'}>
+            <h2 className="text-center mb-4 product-heading">Our Products</h2>
+            <Row className="g-4">
                 {products.map(product => (
-                    <Col key={product.id} md={isGridView ? 4 : 12}>
-                        <Card className="product-card shadow-sm">
-                            <Row className={isGridView ? '' : 'g-0'}>
-                                <Col md={isGridView ? 12 : 4}>
-                                    <Card.Img variant="top" src={product.image} className="product-image" />
-                                </Col>
-                                <Col md={isGridView ? 12 : 8}>
-                                    <Card.Body>
-                                        <Card.Title>{product.name}</Card.Title>
-                                        <Card.Text>{product.description}</Card.Text>
-                                        <h5 className="text-success">{product.price}</h5>
-                                        
-                                        {/* 🗂️ View Details Link */}
-                                        <Link to={`/product/${product.id}`}>
-                                            <Button variant="primary">View Details</Button>
-                                        </Link>
-                                    </Card.Body>
-                                </Col>
-                            </Row>
+                    <Col key={product.id} md={4}>
+                        <Card className="product-card shadow-sm h-100 border-0">
+                            <Card.Img variant="top" src={product.image} className="product-image p-3" />
+                            <Card.Body>
+                                <Card.Title>{product.name}</Card.Title>
+                                <Card.Text>{product.description}</Card.Text>
+                                <h5 className="text-success">{product.price}</h5>
+                                <Link to={`/product/${product.id}`}>
+                                    <Button variant="outline-primary" className="w-100 mt-2">View Details</Button>
+                                </Link>
+                            </Card.Body>
                         </Card>
                     </Col>
                 ))}
