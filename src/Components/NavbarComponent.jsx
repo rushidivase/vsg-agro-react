@@ -6,7 +6,7 @@ function NavbarComponent() {
     <Navbar bg="light" expand="lg" fixed="top" className="shadow-sm">
       <Container fluid>
         <Navbar.Brand href="#">
-          <img src="/vsg-agro-react/images/vsg-l.png" style={{ maxWidth: '60px', height: 'auto' }} alt="Logo" />
+          <img src="/images/vsg-l.png" style={{ maxWidth: '60px', height: 'auto' }} alt="Logo" />
         </Navbar.Brand>
 
         <h5 className="mb-0 main-heading">VSG Agro Equipments</h5>
@@ -32,10 +32,10 @@ function NavbarComponent() {
 
           <Nav>
             <Nav.Link href="#">
-              <img src="/vsg-agro-react/images/cart-logo.jpg" alt="Cart" width="40" height="40" />
+              <img src="/images/cart-logo.jpg" alt="Cart" width="40" height="40" />
             </Nav.Link>
             <Nav.Link href="#">
-              <img src="/vsg-agro-react/images/user-logo.jpg" alt="User" width="40" height="40" />
+              <img src="/images/user-logo.jpg" alt="User" width="40" height="40" />
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
