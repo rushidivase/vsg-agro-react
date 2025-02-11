@@ -3,9 +3,9 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const products = [
-    { id: 1, name: '5 Tyne Cultivator for Power Tiller', image: '/images/p (1).png', price: '$15,000', description: 'Ideal for tough terrains.' },
-    { id: 2, name: 'Advanced Harvester', image: '/images/p2.jpeg', price: '$25,000', description: 'Boosts harvesting efficiency.' },
-    { id: 3, name: 'Irrigation System', image: '/images/irrigation.jpg', price: '$5,000', description: 'Smart water management solutions.' }
+    { id: 1, name: '5 Tyne Cultivator for Power Tiller', image: '/vsg-agro-react/images/p (1).png', price: '$15,000', description: 'Ideal for tough terrains.' },
+    { id: 2, name: 'Advanced Harvester', image: '/vsg-agro-react/images/p2.jpeg', price: '$25,000', description: 'Boosts harvesting efficiency.' },
+    { id: 3, name: 'Irrigation System', image: '/vsg-agro-react/images/irrigation.jpg', price: '$5,000', description: 'Smart water management solutions.' }
 ];
 
 function Products() {

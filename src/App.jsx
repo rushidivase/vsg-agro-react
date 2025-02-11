@@ -7,7 +7,7 @@ import FooterComponent from './Components/FooterComponent';
 
 function App() {
   return (
-    <Router>
+    <Router basename='/vsg-agro-react'>
      <NavbarComponent />  
       <Routes>
         <Route path="/" element={<Home />} />
