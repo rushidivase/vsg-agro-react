@@ -14,21 +14,21 @@ function Home() {
                             <div id="productCarousel" className="carousel slide shadow-lg" data-bs-ride="carousel">
                                 <div className="carousel-inner">
                                     <div className="carousel-item active">
-                                        <img src="/images/c3.jpeg" className="d-block w-100 carousel-image" alt="Tractor" />
+                                        <img src="./images/c3.jpeg" className="d-block w-100 carousel-image" alt="Tractor" />
                                         <div className="carousel-caption d-none d-md-block">
                                             <h5>Powerful Tractor</h5>
                                             <p>Built for tough terrains.</p>
                                         </div>
                                     </div>
                                     <div className="carousel-item">
-                                        <img src="/images/c2.jpeg" className="d-block w-100 carousel-image" alt="Harvester" />
+                                        <img src="./images/c2.jpeg" className="d-block w-100 carousel-image" alt="Harvester" />
                                         <div className="carousel-caption d-none d-md-block">
                                             <h5>Advanced Harvester</h5>
                                             <p>Efficiency in every row.</p>
                                         </div>
                                     </div>
                                     <div className="carousel-item">
-                                        <img src="/images/c1.jpeg" className="d-block w-100 carousel-image" alt="Irrigation System" />
+                                        <img src="./images/c1.jpeg" className="d-block w-100 carousel-image" alt="Irrigation System" />
                                         <div className="carousel-caption d-none d-md-block">
                                             <h5>Irrigation System</h5>
                                             <p>Smart water management solutions.</p>
@@ -51,7 +51,7 @@ function Home() {
                         <Col md={10} className="p-3 rounded">
                             <img
                                 className="img-fluid rounded w-100 mb-4"
-                                src="/images/poster1.png"
+                                src="./images/poster1.png"
                                 alt="Poster"
                             />
                         </Col>
