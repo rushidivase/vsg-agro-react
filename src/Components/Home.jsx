@@ -2,6 +2,7 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import AboutUs from './AboutUs';
 import Products from './Products';
+import Contact from './Contact';
 
 function Home() {
     return (
@@ -66,8 +67,7 @@ function Home() {
                 </section>
 
                 <section id="contact" className="mb-5">
-                    <h2>Contact Us</h2>
-                    <p>Email: <a href="mailto:vsgagro@gmail.com">vsgagro@gmail.com</a> | Phone: 7293-96-4242</p>
+                  <Contact />
                 </section>
             </Container>
         </div>

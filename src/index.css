@@ -52,7 +52,7 @@ body {
 @media (max-width: 992px) {
   .navbar-collapse {
     background-color: white !important;
-    padding: 10px;
+    padding: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
@@ -200,4 +200,72 @@ button:hover {
   background-color: #f9f9f9;
 }
 
+.social-icons a {
+  transition: transform 0.3s ease;
+}
 
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #28a745; /* Green highlight on hover */
+}
+
+.contact-section h2 {
+  font-weight: bold;
+  color: #2d6a4f;
+}
+
+.contact-section iframe {
+  border-radius: 8px;
+}
+
+.contact-section form {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #1b4332;
+  color: #fff;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #74c69d;
+  transition: color 0.3s;
+}
+
+.map-container {
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid #d4edda;  /* Light green border for the map */
+}
+
+.enquiry-form {
+  border: 1px solid #d4edda;  /* Light green border for the form */
+  border-radius: 12px;
+  transition: box-shadow 0.3s ease;
+  background-color: #ffffff;  /* White background for contrast */
+}
+
+.enquiry-form:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.enquiry-form h4 {
+  font-weight: bold;
+  color: #91b499;
+}
+
+body {
+  background-color: #f4f9f4;  /* Light green background globally if needed */
+}
+
+.text-d
+{
+  color: #616667;
+}

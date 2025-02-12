@@ -14,7 +14,7 @@ function NavbarComponent() {
         <Navbar.Toggle aria-controls="navbarNav" className="ms-auto" />
 
         {/* Add custom styles to fix the overlap issue */}
-        <Navbar.Collapse id="navbarNav" style={{ backgroundColor: 'white', zIndex: 1000 }}>
+        <Navbar.Collapse id="navbarNav" style={{  zIndex: 1000 }}>
           <Nav className="mx-auto text-center"> {/* Centered Links */}
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#about-us">About Us</Nav.Link>
