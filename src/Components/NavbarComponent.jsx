@@ -33,7 +33,7 @@ function NavbarComponent() {
           </Form>
 
           <Nav>
-            <Nav.Link href="#">
+            <Nav.Link href="/cart">
               <img src="/vsg-agro-react/images/cart-logo.jpg" alt="Cart" width="40" height="40" />
             </Nav.Link>
             <Nav.Link href="#">
