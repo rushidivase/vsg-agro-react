@@ -11,7 +11,7 @@ function Home() {
                 <section id="home" className="mb-5">
                     <Row className="justify-content-center carousel-container bg-light rounded mb-4 p-3">
                         <Col md={8} className="p-3 rounded">
-                            <div id="productCarousel" className="carousel slide shadow-lg" data-bs-ride="carousel">
+                            <div id="productCarousel" className="carousel slide carousel-fade shadow-lg" data-bs-ride="carousel">
                                 <div className="carousel-inner">
                                     <div className="carousel-item active">
                                         <img src="/vsg-agro-react/images/c3.jpeg" className="d-block w-100 carousel-image" alt="Tractor" />
