@@ -9,7 +9,7 @@ function NavbarComponent() {
           <img src="/vsg-agro-react/images/vsg-l.png" style={{ maxWidth: '60px', height: 'auto' }} alt="Logo" />
         </Navbar.Brand>
 
-        <h5 className="mb-0 main-heading">VSG Agro Equipments</h5>
+        <h5 className="mb-0 main-heading">Welcome VSG Agro Equipments</h5>
 
         <Navbar.Toggle aria-controls="navbarNav" className="ms-auto" />
 
